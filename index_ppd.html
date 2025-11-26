@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Psychology Project – Personality Disorders</title>
+  <meta name="description" content="Class project website on Personality Disorders with a section on Paranoid Personality Disorder." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f172a;--card:#111827;--muted:#94a3b8;--text:#e5e7eb;--brand:#8b5cf6;--brand-2:#06b6d4}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b1220,#0f172a);color:var(--text);font-family:Inter,-apple-system,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    a{color:var(--brand)}
+    header{position:sticky;top:0;background:rgba(15,23,42,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    .container{max-width:1024px;margin:0 auto;padding:0 1rem}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+    .brand{display:flex;gap:.6rem;align-items:center;font-weight:800}
+    .logo{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 10px 25px rgba(139,92,246,.35)}
+    .nav a{margin-left:1rem;text-decoration:none;color:var(--text);font-weight:600;opacity:.9}
+    .nav a:hover{opacity:1}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:4rem 0}
+    .card{background:radial-gradient(1200px 400px at -10% -10%,rgba(139,92,246,.25),transparent),radial-gradient(900px 300px at 110% 110%,rgba(6,182,212,.25),transparent);border:1px solid rgba(255,255,255,.06);padding:2rem;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+    h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:.5rem 0}
+    .badge{display:inline-block;background:rgba(139,92,246,.15);color:#e9d5ff;border:1px solid rgba(139,92,246,.3);padding:.3rem .6rem;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.02em}
+    .grid{display:grid;gap:1.25rem}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    section{padding:3rem 0}
+    section h2{font-size:1.6rem;margin:0 0 .75rem;font-weight:800}
+    .kpi{display:flex;gap:1rem;align-items:center}
+    .kpi .num{font-size:2rem;font-weight:800}
+    .muted{color:var(--muted)}
+    .callout{border-left:4px solid var(--brand);padding:1rem;background:rgba(255,255,255,.03);border-radius:10px}
+    figure{margin:0}
+    img.responsive{width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.08)}
+    footer{border-top:1px solid rgba(255,255,255,.06);padding:2rem 0;color:var(--muted)}
+    .cta{display:inline-block;background:linear-gradient(135deg,var(--brand),var(--brand-2));border:none;color:white;font-weight:800;padding:.9rem 1rem;border-radius:12px;text-decoration:none}
+    table{width:100%;border-collapse:collapse;margin-top:1rem}
+    th,td{padding:.6rem;border-bottom:1px solid rgba(255,255,255,.08);text-align:left}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="logo"></div> <span>Psychology 101 · Team Project</span></div>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#methods">Methods</a>
+        <a href="#results">Results</a>
+        <a href="#ppd">Paranoid PD</a>
+        <a href="#references">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero / Abstract -->
+    <section class="hero" id="overview">
+      <div>
+        <span class="badge">Class Website</span>
+        <h1>Personality Disorders – Team Website</h1>
+        <p class="muted">This website summarizes core concepts on personality disorders and includes an individual section on <strong>Paranoid Personality Disorder (PPD)</strong>. Replace any placeholder text with your team’s content. The layout follows a simple academic structure (abstract → methods → results → discussion → references).</p>
+        <div class="grid grid-3" style="margin-top:1.5rem">
+          <div class="card kpi"><div class="num">N = 58</div><div class="muted">Participants*</div></div>
+          <div class="card kpi"><div class="num">α = .87</div><div class="muted">Reliability*</div></div>
+          <div class="card kpi"><div class="num">p < .05</div><div class="muted">Significance*</div></div>
+        </div>
+        <p class="muted" style="margin-top:.5rem">* Replace these with your own study numbers or remove if not applicable.</p>
+        <p style="margin-top:1rem"><a class="cta" href="#ppd">Jump to Paranoid PD</a></p>
+      </div>
+      <figure class="card">
+        <img class="responsive" src="https://images.unsplash.com/photo-1523246191810-88fcbcb06c87?q=80&w=1600&auto=format&fit=crop" alt="Psychology themed illustration" />
+        <figcaption class="muted" style="margin-top:.5rem">Figure 1. Illustrative image.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Methods -->
+    <section id="methods">
+      <h2>Methods</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Participants</h3>
+          <p>Describe your sample: size, age, recruitment, inclusion/exclusion criteria.</p>
+        </div>
+        <div class="card">
+          <h3>Procedure</h3>
+          <p>Outline how the study was conducted (design, instruments, ethics approvals, consent).</p>
+        </div>
+        <div class="card">
+          <h3>Measures / Instruments</h3>
+          <ul>
+            <li>List scales used (e.g., PANAS, BDI-II) and psychometric properties.</li>
+            <li>Report scoring and interpretation.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Data Analysis</h3>
+          <p>Describe tests (t-test, ANOVA, correlational, regression), alpha level, and software.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results">
+      <h2>Results (Summary)</h2>
+      <div class="card">
+        <p>Summarize your main findings clearly. Use tables/figures where helpful.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Variable</th>
+              <th>M</th>
+              <th>SD</th>
+              <th>r / t / F</th>
+              <th>p</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Subjective well‑being</td>
+              <td>3.8</td>
+              <td>0.6</td>
+              <td>t(56)=2.13</td>
+              <td>< .05</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Paranoid Personality Disorder Section -->
+    <section id="ppd">
+      <h2>Paranoid Personality Disorder (PPD)</h2>
+      <div class="card">
+        <h3>Introduction</h3>
+        <p>Paranoid Personality Disorder (PPD) involves a pervasive pattern of <strong>distrust and suspiciousness</strong> of others such that their motives are interpreted as malevolent. Per DSM‑5, suspicions occur <em>without sufficient basis</em> and cause significant interpersonal and occupational impairment (American Psychiatric Association, 2013). PPD shares paranoid thinking with psychotic disorders but <strong>does not include hallucinations or sustained delusions</strong>, distinguishing it from schizophrenia or delusional disorder.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Etiology</h3>
+          <ul>
+            <li><strong>Biological:</strong> Higher prevalence in families with schizophrenia or schizotypal traits; possible heightened threat‑detection sensitivity.</li>
+            <li><strong>Environmental:</strong> Childhood experiences of trauma, rejection, criticism, or inconsistent caregiving.</li>
+            <li><strong>Cognitive:</strong> Core beliefs such as “People cannot be trusted” and “Others will take advantage of me if I’m not careful,” shaping biased interpretations of ambiguous cues.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Symptoms (DSM‑5)</h3>
+          <ul>
+            <li>Suspicion—without adequate evidence—that others are exploiting, harming, or deceiving them.</li>
+            <li>Unjustified doubts about loyalty/trustworthiness of friends or coworkers.</li>
+            <li>Reluctance to confide in others for fear information will be used against them.</li>
+            <li>Reading hidden threatening meanings into harmless remarks or events.</li>
+            <li>Persistently holding grudges.</li>
+            <li>Perceiving attacks on character not apparent to others; quick to react angrily.</li>
+            <li>Recurrent, unjustified suspicion of partner’s fidelity.</li>
+          </ul>
+          <p class="muted">Symptoms must be long‑standing, inflexible, and lead to functional impairment.</p>
+        </div>
+
+        <div class="card">
+          <h3>Prevalence</h3>
+          <ul>
+            <li>Approximately <strong>2.3%–4.4%</strong> in the general population.</li>
+            <li>Slightly more common in men.</li>
+            <li>Higher rates among relatives of persons with psychotic disorders.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Treatment</h3>
+          <p><strong>Psychotherapy (first‑line):</strong> Cognitive‑Behavioral Therapy to challenge paranoid beliefs and cognitive distortions; supportive therapy for coping and stress reduction; psychodynamic approaches to explore early relational patterns. Building a therapeutic alliance can be difficult due to mistrust.</p>
+          <p><strong>Medication:</strong> No medication specifically treats PPD; low‑dose antipsychotics may reduce severe paranoid ideation; antidepressants/anxiolytics for comorbid symptoms as needed.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Prognosis</h3>
+        <p>PPD tends to be <strong>chronic</strong>. Many individuals function adequately in academic or work settings but experience significant relational conflict due to rigidity and suspiciousness. Improvement is possible with consistent therapy and supportive environments.</p>
+      </div>
+    </section>
+
+    <!-- References -->
+    <section id="references">
+      <h2>References (APA 7th)</h2>
+      <div class="card">
+        <ul>
+          <li>American Psychiatric Association. (2013). <em>Diagnostic and statistical manual of mental disorders</em> (5th ed.).</li>
+          <li>Millon, T. (2011). <em>Personality disorders in modern life</em>. Wiley.</li>
+          <li>Widiger, T. A., &amp; Trull, T. J. (2007). Plate tectonics in the classification of personality disorder. <em>Journal of Abnormal Psychology</em>, 116(2), 433–439.</li>
+        </ul>
+        <div class="callout"><strong>Note:</strong> Add any primary sources your instructor requires and convert in‑text citations to APA format in your write‑up.</div>
+      </div>
+    </section>
+
+    <!-- Downloads / Contact -->
+    <section id="download">
+      <h2>Downloads &amp; Contact</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Files</h3>
+          <ul>
+            <li><a href="#">Project PDF (add later)</a></li>
+            <li><a href="#">Data (CSV)</a></li>
+            <li><a href="#">Slides (PPTX)</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Contact</h3>
+          <p>Your Name • <a href="mailto:your.email@example.com">your.email@example.com</a> • University</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Team 6 — Psychology 101. Academic project (non‑commercial).</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
